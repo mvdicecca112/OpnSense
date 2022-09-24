@@ -1,11 +1,11 @@
 #
-# Raw IPs for the firewall block lists. These come from:
+# Raw IPs for the firewall block lists. These come from: Suricata NTP DDOS Blocks on my firewall
 #
 #
 #
 #*************************************************************
 #
-#  Copyright (c) 2003-2022
+#  Copyright (c) 2022
 #  All rights reserved.
 #  
 #  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the 
@@ -27,12 +27,13 @@
 #  USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
 #
 #
-# Rev 4
+# Rev 5
 
 
 209.141.47.136
 205.185.116.53
 209.141.32.234
+209.141.56.201
 103.207.36.193
 64.62.197.52
 185.222.59.4
@@ -43,3 +44,11 @@
 45.164.20.123
 104.149.150.122
 172.111.2.117
+107.182.129.176
+38.22.109.60
+64.62.197.148
+37.44.238.122
+37.44.238.148
+29.250.206.86
+37.44.238.118
+103.207.36.193
