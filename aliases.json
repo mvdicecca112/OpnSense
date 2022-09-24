@@ -1,0 +1,229 @@
+{
+  "geoip": {
+    "url": "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country-CSV&license_key=xlYtUqSaDR5pRq5y&suffix=zip"
+  },
+  "aliases": {
+    "alias": {
+      "20204021-aafe-436c-a692-de2a15bfd895": {
+        "enabled": "1",
+        "name": "blocked_countries_ipv4",
+        "type": "geoip",
+        "proto": "IPv4,IPv6",
+        "interface": "",
+        "counters": "1",
+        "updatefreq": "",
+        "content": "CN\nIN\nIR\nSG\nBG\nNL\nKP\nRU\nUA\nDE\nLT\nAO\nBF\nBI\nBJ\nBW\nCD\nCF\nCG\nCI\nCM\nDJ\nDZ\nEG\nEH\nER\nET\nGA\nGH\nGM\nGN\nGQ\nGW\nKE\nLR\nLS\nLY\nMA\nML\nMR\nMW\nMZ\nNA\nNE\nNG\nRW\nSD\nSL\nSN\nSO\nSS\nST\nSZ\nTD\nTG\nTN\nTZ\nUG\nZA\nZM\nZW\nAQ\nSJ\nBM\nCV\nFK\nFO\nGS\nIS\nSH\nAU\nAD\nAL\nAT\nAX\nBA\nBE\nBY\nCH\nCZ\nDK\nEE\nES\nFI\nFR\nGG\nGI\nGR\nHR\nHU\nIM\nIT\nJE\nLI\nLU\nLV\nMC\nMD\nME\nMK\nMT\nNO\nPL\nPT\nRO\nRS\nSE\nSI\nSK\nSM\nTR\nVA\nCC\nCX\nIO\nKM\nMG\nMU\nMV\nRE\nSC\nTF\nYT\nAS\nCK\nFJ\nFM\nGU\nKI\nMH\nMP\nNC\nNF\nNR\nNU\nNZ\nPF\nPG\nPN\nPW\nSB\nTK\nTO\nTV\nUM\nVU\nWF\nWS\nAG\nAI\nAR\nAW\nBB\nBL\nBO\nBQ\nBR\nBS\nBZ\nCL\nCO\nCR\nCU\nCW\nDM\nDO\nEC\nGD\nGF\nGL\nGP\nGT\nGY\nHN\nHT\nJM\nKN\nKY\nLC\nMF\nMQ\nMS\nMX\nNI\nPA\nPE\nPM\nPR\nPY\nSR\nSV\nSX\nTC\nTT\nUY\nVC\nVE\nVG\nVI\nAE\nAF\nAM\nAZ\nBD\nBH\nBN\nBT\nCY\nGE\nHK\nID\nIL\nIQ\nJO\nJP\nKG\nKH\nKR\nKW\nKZ\nLA\nLB\nLK\nMM\nMN\nMO\nMY\nNP\nOM\nPH\nPK\nPS\nQA\nSA\nSY\nTH\nTJ\nTL\nTM\nTW\nUZ\nVN\nYE",
+        "description": "Block Specific Non-US Countries that show in IDS"
+      },
+      "b5583a0d-e0c9-4fde-acf2-a9dd89ad1223": {
+        "enabled": "1",
+        "name": "spamhaus_drop",
+        "type": "urltable",
+        "proto": "",
+        "interface": "",
+        "counters": "1",
+        "updatefreq": "1",
+        "content": "https://www.spamhaus.org/drop/drop.txt",
+        "description": "Don’t Route Or Peer List"
+      },
+      "b286424f-8894-4b02-af56-81eef604a409": {
+        "enabled": "1",
+        "name": "spamhaus_edrop",
+        "type": "urltable",
+        "proto": "",
+        "interface": "",
+        "counters": "1",
+        "updatefreq": "1",
+        "content": "https://www.spamhaus.org/drop/edrop.txt",
+        "description": "Extended Don’t Route Or Peer List"
+      },
+      "6b4ebe02-c2fd-4931-a8af-9f0c3bf6bf87": {
+        "enabled": "1",
+        "name": "DShield",
+        "type": "urltable",
+        "proto": "",
+        "interface": "",
+        "counters": "1",
+        "updatefreq": "0.5",
+        "content": "https://www.dshield.org/block.txt",
+        "description": "Shield Block List Drop"
+      },
+      "1076abcb-4fe9-4598-8290-a34e2d167a3c": {
+        "enabled": "1",
+        "name": "FireHOL",
+        "type": "urltable",
+        "proto": "",
+        "interface": "",
+        "counters": "1",
+        "updatefreq": "0.5",
+        "content": "https://raw.githubusercontent.com/ktsaou/blocklist-ipsets/master/firehol_level1.netset",
+        "description": "FireHOL List Drop"
+      },
+      "29692286-8d2e-4570-9cb6-768c41ebe93c": {
+        "enabled": "1",
+        "name": "EmergingThreats",
+        "type": "urltable",
+        "proto": "",
+        "interface": "",
+        "counters": "1",
+        "updatefreq": "0.5",
+        "content": "http://rules.emergingthreats.net/fwrules/emerging-Block-IPs.txt",
+        "description": "EmergingThreats"
+      },
+      "09d9e5c3-5f6a-4217-b765-679ebd90aa9f": {
+        "enabled": "1",
+        "name": "NTPHell",
+        "type": "urltable",
+        "proto": "",
+        "interface": "",
+        "counters": "1",
+        "updatefreq": "0.5",
+        "content": "https://raw.githubusercontent.com/mvdicecca112/OpnSense/main/ntphell.txt",
+        "description": "NTPHell"
+      },
+      "bogons": {
+        "enabled": "1",
+        "name": "bogons",
+        "type": "external",
+        "proto": "",
+        "interface": "",
+        "counters": "",
+        "updatefreq": "",
+        "content": "",
+        "description": "bogon networks (internal)"
+      },
+      "bogonsv6": {
+        "enabled": "1",
+        "name": "bogonsv6",
+        "type": "external",
+        "proto": "",
+        "interface": "",
+        "counters": "",
+        "updatefreq": "",
+        "content": "",
+        "description": "bogon networks IPv6 (internal)"
+      },
+      "virusprot": {
+        "enabled": "1",
+        "name": "virusprot",
+        "type": "external",
+        "proto": "",
+        "interface": "",
+        "counters": "",
+        "updatefreq": "",
+        "content": "",
+        "description": "overload table for rate limiting (internal)"
+      },
+      "sshlockout": {
+        "enabled": "1",
+        "name": "sshlockout",
+        "type": "external",
+        "proto": "",
+        "interface": "",
+        "counters": "",
+        "updatefreq": "",
+        "content": "",
+        "description": "abuse lockout table (internal)"
+      },
+      "__wan_network": {
+        "enabled": "1",
+        "name": "__wan_network",
+        "type": "internal",
+        "proto": "",
+        "interface": "",
+        "counters": "",
+        "updatefreq": "",
+        "content": "",
+        "description": "wan net"
+      },
+      "__lan_network": {
+        "enabled": "1",
+        "name": "__lan_network",
+        "type": "internal",
+        "proto": "",
+        "interface": "",
+        "counters": "",
+        "updatefreq": "",
+        "content": "",
+        "description": "lan net"
+      },
+      "__lo0_network": {
+        "enabled": "1",
+        "name": "__lo0_network",
+        "type": "internal",
+        "proto": "",
+        "interface": "",
+        "counters": "",
+        "updatefreq": "",
+        "content": "",
+        "description": "Loopback net"
+      },
+      "__opt1_network": {
+        "enabled": "1",
+        "name": "__opt1_network",
+        "type": "internal",
+        "proto": "",
+        "interface": "",
+        "counters": "",
+        "updatefreq": "",
+        "content": "",
+        "description": "OPT1 net"
+      },
+      "__opt2_network": {
+        "enabled": "1",
+        "name": "__opt2_network",
+        "type": "internal",
+        "proto": "",
+        "interface": "",
+        "counters": "",
+        "updatefreq": "",
+        "content": "",
+        "description": "OPT2 net"
+      },
+      "__opt3_network": {
+        "enabled": "1",
+        "name": "__opt3_network",
+        "type": "internal",
+        "proto": "",
+        "interface": "",
+        "counters": "",
+        "updatefreq": "",
+        "content": "",
+        "description": "OPT3 net"
+      },
+      "__opt4_network": {
+        "enabled": "1",
+        "name": "__opt4_network",
+        "type": "internal",
+        "proto": "",
+        "interface": "",
+        "counters": "",
+        "updatefreq": "",
+        "content": "",
+        "description": "OPT4 net"
+      },
+      "__opt5_network": {
+        "enabled": "1",
+        "name": "__opt5_network",
+        "type": "internal",
+        "proto": "",
+        "interface": "",
+        "counters": "",
+        "updatefreq": "",
+        "content": "",
+        "description": "OPT5 net"
+      },
+      "__opt6_network": {
+        "enabled": "1",
+        "name": "__opt6_network",
+        "type": "internal",
+        "proto": "",
+        "interface": "",
+        "counters": "",
+        "updatefreq": "",
+        "content": "",
+        "description": "OPT6 net"
+      }
+    }
+  }
+}
